@@ -21,6 +21,23 @@
 
 	}
 
+	nav{
+		color: white;
+		padding-top: 20px;
+		position: absolute;
+		right: 150px;
+		font-size: 70%;
+	}
+
+	ul{
+		list-style-type: none;
+	}
+
+	li{
+		float: left;
+		padding-left: 20px;
+	}
+
 	#div1textgrande{
 		width: 50%;
 		color: white;
@@ -146,9 +163,38 @@
 		position: relative;
 		background-color: white;
 		padding-top: 25px;
+		font-size: 80%
 
 	}
 
+	.div4cont{
+		position: absolute;
+		top: 18px;
+		left:25%;
+		line-height: 30%;
+		
+
+	}
+
+	.div4tit{
+		font-size: 125%;
+		margin-bottom: 20px;
+
+	}
+	#linkcorreo{
+		text-decoration: none;
+	}
+
+
+
+	.div4suscri{
+		position: absolute;
+		top: 18px;
+		left:50%;
+		line-height: 30%;
+		font-size: 90%
+
+	}
 
 	.div5{
 		width: 100%;
@@ -171,14 +217,7 @@
 
 	}
 
-	.div4cont{
-		position: absolute;
-		top: 18px;
-		left:25%;
-		line-height: 30%;
-		font-size: 90%
 
-	}
 	</style>
 
 
@@ -188,6 +227,17 @@
 
 	<div class="div1">
 		<div class="imglogoabs"><img src="./images/latam_logo.png" width="100px"></div>
+		<nav>
+			<ul>
+				<li>Equipo</li>
+				<li>Blog</li>
+				<li>Contacto</li>
+
+
+			</ul>
+
+
+		</nav>
 		<p id="div1textgrande">COMIENZA UNA NUEVA VIDA Y UNETE AL MUNDO TECNOLOGICO</p>
 
 		<div id="botonazul1">Comienza aca!</div>
@@ -220,17 +270,26 @@
 	</div>
 
 	<div class="div4">
+		
 		<div class="div4cont">
-			<p>Contacto</p>
-			<p>Desafio Latam</p>
+			<p class="div4tit">Contacto</p>
+			<p><strong>Desafio Latam</strong></p>
 			<p>Ezequias Alliende 2361</p>
 			<p>P: +56 9 5117 7975</p>
-			<p>inscrpciones@desafiolatam.com</p>
+			<p><br><a id="linkcorreo" href="mailto:inscrpciones@desafiolatam.com">inscrpciones@desafiolatam.com</a></p>
+		</div>
 
+		<div class="div4suscri">
+			<p class="div4tit">Suscribete</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			<form>
+				<input type="text" name="" value="Ingresa tu email">
+				<input type="submit" value="Enviar">
+
+			</form>
 
 
 		</div>
-
 
 
 	</div>
